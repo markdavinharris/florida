@@ -1,0 +1,9 @@
+{
+ "state": "FL",
+ "county_expr": "REGEXP_REPLACE(UPPER(a.Jurisname), ' COUNTY$', '')",
+ "alias": {
+  "MIAMI DADE": "MIAMI-DADE",
+  "DE SOTO": "DESOTO"
+ },
+ "_note": "Read by ev_refresh.py. county_expr is the SQL for the county of an ABEV row (a = ABEV row, v = voter-file row); alias maps feed/voter-file spellings to the county names used by the page map."
+}
