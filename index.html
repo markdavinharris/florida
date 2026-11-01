@@ -1036,6 +1036,52 @@ function methodology(){
 })();
 
 
+
+/* ---------- Election Day in 2024 and 2022 (static; added 2026-11-01) ---------- */
+(function(){
+var EDAY={"st":"Florida","y":{"2024":{"_":[11007659,2618985],"ALACHUA":[138258,30996],"BAKER":[15043,4162],"BAY":[98734,19532],"BRADFORD":[14008,4878],"BREVARD":[365773,95523],"BROWARD":[883954,181958],"CALHOUN":[6460,2132],"CHARLOTTE":[124894,22773],"CITRUS":[99060,25302],"CLAY":[128072,30878],"COLLIER":[219069,41119],"COLUMBIA":[33835,7892],"DESOTO":[12596,4126],"DIXIE":[8183,2878],"DUVAL":[476867,115747],"ESCAMBIA":[164771,48706],"FLAGLER":[80725,15569],"FRANKLIN":[6827,2196],"GADSDEN":[22017,7712],"GILCHRIST":[10750,4237],"GLADES":[5326,2637],"GULF":[8798,2075],"HAMILTON":[5798,2212],"HARDEE":[8180,2871],"HENDRY":[13551,4049],"HERNANDO":[111652,32232],"HIGHLANDS":[52260,15888],"HILLSBOROUGH":[679842,156957],"HOLMES":[9162,3829],"INDIAN RIVER":[99897,23285],"JACKSON":[22257,6214],"JEFFERSON":[8582,2854],"LAFAYETTE":[3788,1401],"LAKE":[228867,69708],"LEE":[397101,65481],"LEON":[159033,41112],"LEVY":[24577,9076],"LIBERTY":[3509,1181],"MADISON":[9233,2196],"MANATEE":[230930,58381],"MARION":[215662,68630],"MARTIN":[99504,20013],"MIAMI-DADE":[1104928,216707],"MONROE":[44871,12375],"NASSAU":[66256,12486],"OKALOOSA":[115133,28997],"OKEECHOBEE":[16142,5373],"ORANGE":[614223,154680],"OSCEOLA":[174487,39548],"PALM BEACH":[753402,173123],"PASCO":[321552,102965],"PINELLAS":[522308,128084],"POLK":[352359,114277],"PUTNAM":[36519,12822],"SANTA ROSA":[113754,29816],"SARASOTA":[280552,57807],"SEMINOLE":[255661,57386],"ST JOHNS":[200017,45108],"ST LUCIE":[186909,39201],"SUMTER":[106135,14448],"SUWANNEE":[22039,6709],"TAYLOR":[10055,2444],"UNION":[6264,2123],"VOLUSIA":[313846,77045],"WAKULLA":[20040,6000],"WALTON":[50134,14413],"WASHINGTON":[12668,4450]},"2022":{"_":[7777454,2702210],"ALACHUA":[95952,36906],"BAKER":[10757,4762],"BAY":[67106,22565],"BRADFORD":[10291,5170],"BREVARD":[267968,104060],"BROWARD":[599383,186644],"CALHOUN":[4848,2164],"CHARLOTTE":[92824,23182],"CITRUS":[75928,29089],"CLAY":[90400,36935],"COLLIER":[163834,52890],"COLUMBIA":[23778,9257],"DESOTO":[8678,3880],"DIXIE":[6194,2919],"DUVAL":[328895,131862],"ESCAMBIA":[115754,50392],"FLAGLER":[58818,16484],"FRANKLIN":[5455,2338],"GADSDEN":[17437,7533],"GILCHRIST":[7904,4383],"GLADES":[3827,2285],"GULF":[6421,2631],"HAMILTON":[4327,2099],"HARDEE":[5527,2761],"HENDRY":[8296,3269],"HERNANDO":[80584,32682],"HIGHLANDS":[39910,16616],"HILLSBOROUGH":[483659,153202],"HOLMES":[6779,3608],"INDIAN RIVER":[77372,26023],"JACKSON":[16327,7236],"JEFFERSON":[7151,3402],"LAFAYETTE":[2915,1615],"LAKE":[160375,72993],"LEE":[274924,142],"LEON":[117885,45736],"LEVY":[17935,8924],"LIBERTY":[2618,1281],"MADISON":[7032,2896],"MANATEE":[171805,61401],"MARION":[156119,73446],"MARTIN":[77719,26552],"MIAMI-DADE":[713908,229575],"MONROE":[33995,13765],"NASSAU":[47956,17103],"OKALOOSA":[80882,33496],"OKEECHOBEE":[10922,5110],"ORANGE":[407551,139050],"OSCEOLA":[102638,30991],"PALM BEACH":[543659,193933],"PASCO":[224786,95705],"PINELLAS":[422892,132948],"POLK":[230440,109569],"PUTNAM":[26688,12732],"SANTA ROSA":[75792,33847],"SARASOTA":[218783,69278],"SEMINOLE":[183431,62982],"ST JOHNS":[145044,59228],"ST LUCIE":[122406,41066],"SUMTER":[89655,19528],"SUWANNEE":[16391,7953],"TAYLOR":[7628,3538],"UNION":[4560,2361],"VOLUSIA":[226581,75991],"WAKULLA":[15130,6650],"WALTON":[34896,16675],"WASHINGTON":[9129,4921]}}};
+var css0='#s-eday .edgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}'
+ +'#s-eday .edc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px 12px;min-width:0;display:flex;flex-direction:column;gap:6px}'
+ +'#s-eday .edl{font-family:var(--cond);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px;color:var(--muted)}'
+ +'#s-eday .edv{font-family:var(--cond);font-weight:700;font-size:34px;line-height:1;letter-spacing:-.01em}'
+ +'#s-eday .edv small{font-size:16px;font-weight:600;color:var(--fg2);margin-left:6px;letter-spacing:0}'
+ +'#s-eday .edd{font-size:13px;color:var(--fg2)}#s-eday .edd b{font-weight:700}'
+ +'#s-eday .edbar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--line);margin-top:4px}'
+ +'#s-eday .edbar span{display:block;height:100%}'
+ +'#s-eday .edkey{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted)}'
+ +'#s-eday .edkey i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}';
+var st=document.createElement('style');st.textContent=css0;document.head.appendChild(st);
+var sec=document.createElement('section');sec.id='s-eday';
+sec.innerHTML='<header><div><div class="rule"></div><h2>Election Day votes in 2024 and 2022 <small id="eday-scope"></small></h2></div></header>'
+ +'<div class="edgrid" id="eday-cards"></div><div class="hint" id="eday-hint"></div>';
+var after=document.getElementById('s-pace')||document.getElementById('s-kpi');
+if(after&&after.parentNode)after.parentNode.insertBefore(sec,after.nextSibling);else document.querySelector('main').appendChild(sec);
+var n=function(x){return Math.round(x).toLocaleString('en-US');};
+var tc=function(s){return s.toLowerCase().replace(/\b\w/g,function(c){return c.toUpperCase();});};
+function draw(){
+  var sc=(typeof state!=='undefined'&&state&&state.scope)?state.scope:'STATE';
+  var key=sc==='STATE'?'_':sc;
+  document.getElementById('eday-scope').textContent=sc==='STATE'?EDAY.st+' statewide':tc(sc)+' County';
+  var cs=getComputedStyle(document.documentElement);
+  var html='';
+  ['2024','2022'].forEach(function(y){
+    var r=EDAY.y[y][key]||[0,0], voted=r[0], ed=r[1], early=voted-ed, sh=voted?100*ed/voted:0;
+    var col=cs.getPropertyValue(y==='2024'?'--y24':'--y22').trim();
+    var lab=(EDAY.lab&&EDAY.lab[y])||'Election Day';
+    html+='<div class="edc"><div class="edl">'+y+' general · '+lab+'</div>'
+      +'<div class="edv num">'+n(ed)+'<small>votes</small></div>'
+      +'<div class="edd"><b>'+sh.toFixed(1)+'%</b> of the <b>'+n(voted)+'</b> voters recorded as voting · <b>'+n(early)+'</b> voted early or by mail</div>'
+      +'<div class="edbar" role="img" aria-label="'+sh.toFixed(1)+'% on Election Day"><span style="width:'+(100-sh)+'%;background:var(--muted);opacity:.45"></span><span style="width:'+sh+'%;background:'+col+'"></span></div>'
+      +'<div class="edkey"><span><i style="background:var(--muted);opacity:.45"></i>Early / mail</span><span><i style="background:'+col+'"></i>'+lab+'</span></div></div>';
+  });
+  document.getElementById('eday-cards').innerHTML=html;
+  document.getElementById('eday-hint').textContent=(EDAY.note?EDAY.note+' ':'')+'Counted from each year’s voter file (2024 and 2022 snapshots): voters recorded as voting in that November’s general election, less those with a mail ballot returned or an early in-person vote in that year’s early-vote feed (or an early / mail method in their vote history). Voters removed from the rolls before the snapshot are not included, so these run somewhat below certified turnout. County is the voter’s county on that year’s file.';
+}
+if(typeof render==='function'){var _r=render;render=function(){var o=_r.apply(this,arguments);try{draw();}catch(e){}return o;};}
+draw();
+})();
+
+
 </script>
 
 </body>
